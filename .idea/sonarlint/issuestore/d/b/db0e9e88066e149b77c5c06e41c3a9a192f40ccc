@@ -1,0 +1,6 @@
+
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(²Ú±Ž8Ð‡¯’¿,
+qsquid:S1450"URemove the "button" field and declare it as a local variable in the relevant methods.(ÈòÉ¹8Ð‡¯’¿,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€”—ž8Ð‡¯’¿,
+msquid:S1450"QRemove the "tv" field and declare it as a local variable in the relevant methods.(¯‘Âú8Ð‡¯’¿,
+ysquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ê»‰¶úÿÿÿÿ8Ð‡¯’¿,
