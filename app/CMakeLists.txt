@@ -14,7 +14,7 @@ file(GLOB_RECURSE SOURCES "src/main/cpp/source/*.cpp" "src/main/cpp/include/*.h"
 message(STATUS "my_gui_sources = ${SOURCES}")
 
 add_library( # Sets the name of the library.
-             native-lib
+             HelloJni
 
              # Sets the library as a shared library.
              SHARED
@@ -41,7 +41,7 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
-                       native-lib
+                      HelloJni
 
                        # Links the target library to the log library
                        # included in the NDK.

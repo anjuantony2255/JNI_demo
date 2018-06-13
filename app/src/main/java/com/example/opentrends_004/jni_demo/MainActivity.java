@@ -11,10 +11,6 @@ import com.example.opentrends_004.jni.JniActivity;
 
 public class MainActivity extends AppCompatActivity  {
 
-   private Button button;
-   private TextView tv;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,14 +20,14 @@ public class MainActivity extends AppCompatActivity  {
     }
     public void init(){
 
-    tv =  findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
-    button = findViewById(R.id.btn_click);
-    button.setOnClickListener(new View.OnClickListener() {
+        TextView tv =  findViewById(R.id.sample_text);
+        tv.setText(stringFromJNI());
+        Button button = findViewById(R.id.btn_click);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-              Intent i = new Intent(MainActivity.this,JniActivity.class);
-                startActivity(i);
+             public void onClick(View view) {
+                 Intent i = new Intent(MainActivity.this,JniActivity.class);
+                  startActivity(i);
             }
         });
     }
@@ -39,8 +35,7 @@ public class MainActivity extends AppCompatActivity  {
     public native String stringFromJNI();
 
     static {
-        System.loadLibrary("native-lib");
-        //System.loadLibrary("native-libjni");
+        System.loadLibrary("HelloJni");
     }
 
 }
